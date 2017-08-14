@@ -19,4 +19,6 @@ Bilibili绘板延时记录器
 
 主程序WeirdReq.exe
 
+吐槽：之前脑子进水了拿按键精灵写了半天的右键保存……
+
 THIS PROJECT IS SUBJECT TO THE TERMS OF THE MOZILLA PUBLIC LICENSE, v. 2.0.

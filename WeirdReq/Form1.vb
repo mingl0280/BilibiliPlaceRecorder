@@ -10,6 +10,7 @@ Imports Gecko.DOM
 Imports Gecko.Events
 Imports System.IO
 Imports System.Drawing.Imaging
+Imports Gecko
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -25,6 +26,7 @@ Public Class Form1
         End If
         Timer1.Start()
         Timer1_Tick(New Object, New EventArgs)
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -43,4 +45,18 @@ Public Class Form1
         Return Convert.ToInt64(DateTime.UtcNow.Subtract(New DateTime(1970, 1, 1)).TotalMilliseconds()).ToString()
     End Function
 
+    Private Sub SetTimerHandler(sender As Object, e As EventArgs)
+        Dim inp = InputBox("Set current interval in seconds:", "Set timer interval", (Timer1.Interval / 1000).ToString)
+        If (inp = "") Then
+            Return
+        End If
+        Dim vinp = CInt(inp) * 1000
+        If (vinp <> Timer1.Interval) Then
+            Timer1.Interval = vinp
+        End If
+    End Sub
+
+    Private Sub gWebBrowser_ShowContextMenu(sender As Object, e As GeckoContextMenuEventArgs) Handles gWebBrowser.ShowContextMenu
+        e.ContextMenu.MenuItems.Add(New MenuItem("Set Timer Interval", New EventHandler(AddressOf SetTimerHandler)))
+    End Sub
 End Class
