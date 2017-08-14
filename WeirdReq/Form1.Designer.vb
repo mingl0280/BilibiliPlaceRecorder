@@ -27,7 +27,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.gWebBrowser = New Gecko.GeckoWebBrowser()
-
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
@@ -51,7 +50,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1853, 1023)
         Me.Controls.Add(Me.gWebBrowser)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Bilibili Place Recorder"
         Me.ResumeLayout(False)
 
     End Sub
