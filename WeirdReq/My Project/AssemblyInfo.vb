@@ -1,4 +1,12 @@
-﻿Imports System
+﻿'  This Source Code Form Is subject To the terms Of the Mozilla Public
+'  License, v. 2.0. If a copy of the MPL was Not distributed with this
+'  file, You can obtain one at http: //mozilla.org/MPL/2.0/.
+
+'If it Is Not possible Or desirable To put the notice In a particular
+'file, then You may include the notice in a location (such as a LICENSE
+'file in a relevant directory) where a recipient would be likely to look
+'For such a notice.
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 

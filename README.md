@@ -18,3 +18,5 @@ Bilibili绘板延时记录器
 需.Net 4.5.2及以后版本。
 
 主程序WeirdReq.exe
+
+THIS PROJECT IS SUBJECT TO THE TERMS OF THE MOZILLA PUBLIC LICENSE, v. 2.0.
